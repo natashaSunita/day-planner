@@ -30,7 +30,18 @@ body {
 
 main {
     flex-grow: 2;
-    padding: 0 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2rem;
+}
+
+/* Main Styles */
+
+.timeblock {
+    height: 100px;
+    background-color: #88c5a8;
+    margin: 1rem;
 }
 
 /* Footer Section*/
