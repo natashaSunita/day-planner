@@ -32,10 +32,11 @@ body {
 
 main {
     flex-grow: 2;
-    /* display: flex;
-    flex-direction: row;
-    justify-content: center;
-    padding: 2rem; */
+    padding: 8rem 0;
+}
+
+.rows {
+    height: 8rem;
 }
 
 .hours {
@@ -49,17 +50,16 @@ main {
     background-color: bisque;
 }
 
-.timeblocks {
-    display: flex;
-    flex-direction: column;
+.timeslot {
+    border: solid black;
+    text-align: center;
+    font-size: 2rem;
 }
 
-.timeblock {
-    height: 100px;
-    width: 100%;
-    background-color: #88c5a8;
-    margin: 1rem;
+.save {
+    font-size: 2rem;
 }
+
 
 /* Footer Section*/
 
