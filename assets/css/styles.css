@@ -34,7 +34,7 @@ body {
 
 main {
     flex-grow: 2;
-    padding: 8rem 0;
+    padding: 4rem 0;
 }
 
 .rows {
@@ -70,7 +70,6 @@ main {
     background-color: black;
     text-align: center;
     color: var(--jadegreen);
-    letter-spacing: 0.2rem;
     padding: 1rem;
     line-height: 3rem;
 }
@@ -79,15 +78,10 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* justify-content: center; */
 }
 
 .contact-link {
-    /* padding: 0.8rem; */
     text-decoration: none;
     color: var(--jadegreen);
-}
-
-.contact-link:hover {
 }
 

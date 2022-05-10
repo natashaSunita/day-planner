@@ -24,8 +24,6 @@ function colourCode() {
     }
 }
 
-colourCode();
-
 // Gets textarea input and stores in local storage
 saveBtn.forEach(function(element) {
     element.addEventListener("click", function() {
@@ -34,4 +32,15 @@ saveBtn.forEach(function(element) {
         localStorage.setItem(time, value);
     })});
 
+// Retrieve each time's saved value from local storage
+taskInput[0].value = localStorage.getItem("hour-09");
+taskInput[1].value = localStorage.getItem("hour-10");
+taskInput[2].value = localStorage.getItem("hour-11");
+taskInput[3].value = localStorage.getItem("hour-12");
+taskInput[4].value = localStorage.getItem("hour-13");
+taskInput[5].value = localStorage.getItem("hour-14");
+taskInput[6].value = localStorage.getItem("hour-15");
+taskInput[7].value = localStorage.getItem("hour-16");
+taskInput[8].value = localStorage.getItem("hour-17");
 
+colourCode();
