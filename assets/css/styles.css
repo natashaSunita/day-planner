@@ -1,5 +1,7 @@
 :root {
-    --jadegreen: #88c5a8;
+    --jadegreen: #a4cac3;
+    --lightgrey: #c7c7c7;
+    --lightpink: rgb(255, 215, 221);
 }
 * {
     box-sizing: border-box;
@@ -45,8 +47,21 @@ main {
     line-height: 8rem;
 }
 
+.hour-text {
+    text-align: center;
+    line-height: 8rem;
+}
+
 .past {
-    background-color: gray;
+    background-color: var(--lightgrey);
+}
+
+.present {
+    background-color: var(--lightpink);
+}
+
+.future {
+    background-color: var(--jadegreen);
 }
 
 
