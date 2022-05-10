@@ -49,7 +49,6 @@ main {
 
 .hour-text {
     text-align: center;
-    line-height: 8rem;
 }
 
 .past {
@@ -69,10 +68,11 @@ main {
 
 .footer {
     background-color: black;
-    font-size: 1.4rem;
     text-align: center;
     color: var(--jadegreen);
     letter-spacing: 0.2rem;
+    padding: 1rem;
+    line-height: 3rem;
 }
 
 .contact-container {
@@ -83,7 +83,7 @@ main {
 }
 
 .contact-link {
-    padding: 1rem;
+    /* padding: 0.8rem; */
     text-decoration: none;
     color: var(--jadegreen);
 }
