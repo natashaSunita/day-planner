@@ -1,13 +1,13 @@
 const currentDate = document.getElementById("current-date");
 const currentTime = document.getElementById("current-time");
 const hourBlocks = document.querySelectorAll(".rows");
+const taskInput = document.querySelectorAll(".hour-text");
+const saveBtn = document.querySelectorAll(".save");
+
 
 // Display current date and time using moment
 currentDate.textContent = moment().format("Do MMM YYYY");
 currentTime.textContent = moment().format("k:mm:ss a");
-
-const thing = hourBlocks[0].getAttribute("id");
-console.log(hourBlocks[0].children[1]);
 
 // colour timeblocks depending on current time
 function colourCode() {
@@ -26,16 +26,12 @@ function colourCode() {
 
 colourCode();
 
+// Gets textarea input and stores in local storage
+saveBtn.forEach(function(element) {
+    element.addEventListener("click", function() {
+        let time = this.parentElement.getAttribute("id");
+        let value = this.previousElementSibling.value;
+        localStorage.setItem(time, value);
+    })});
 
 
-
-// shape of i, thirsty, what am I doing? websites and their layers
-// whtat would I like to be really good at? drawing? music? biology? gardening?
-
-// target by class
-// if time is < then current time
-// color grey
-// if time is equal to current time
-// color green
-// if time is > than current time
-// color pink
