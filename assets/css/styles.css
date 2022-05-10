@@ -39,21 +39,14 @@ main {
     height: 8rem;
 }
 
-.hours {
-    display: flex;
-    flex-direction: column;
-}
-
-.hour {
-    height: 100px;
-    width: 100px;
-    background-color: bisque;
-}
-
 .timeslot {
     border: solid black;
     text-align: center;
     line-height: 8rem;
+}
+
+.past {
+    background-color: gray;
 }
 
 
